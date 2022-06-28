@@ -21,17 +21,34 @@ if (age==18){ // tester l'égalité de la valeur entre deux informations
 // == on veut tester l'égalité de la valeur entre deux informations
 //=== on veut tester l'égalité de la valeur et l'égalité du type entre deux informations
 
+// EXO: AFficher dans la console si ce le nombre est positif ou négatif
 
-// EXO
-/* demander avec prompt un nombre à l'utilisateur
-afficher dans la console si le nombre est pair ou impair*/
+nombre = prompt("veuillez rentrer un numéro ! ") // ouvre un tiroire pour le nombre entré par l'utilisateur
+nombre=parseInt(nombre) // convertir la chaine de caractere en nombre
+if ( nombre > 0 )  {
+    console.error("le nombre est positif")
+}
+else  {
+    console.error("le nombre est négatif")
+}
 
-nombre = prompt("votre chiffre")
-nombre=parseInt(nombre)
-if (nombre > 0){
-    console.error("ceci est un nombre positif")
-}
-else {
-    console.error("ceci est un nombre négatif")
-}
+
+/**
+ * EX 2 : 
+ * Demander avec prompt un nombre à l'utilisateur
+ * AFficher dans la console si ce le nombre est pair ou impair
+ * 
+ */ 
+ nombre = prompt("veuillez rentrer un numéro!") // ouvre un tiroire pour le nombre entré par l'utilisateur
+ nombre=parseInt(nombre) // convertir la chaine de caractere en nombre
+ if ( (nombre % 2) == 0 )  {
+     console.error("le nombre est pair")
+ }
+ else  {
+     console.error("le nombre est impair")
+ }
+
+ ////////////////////////////////////////////////////////////
+
+
  
