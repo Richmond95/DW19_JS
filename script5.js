@@ -119,22 +119,43 @@ document.getElementById("addition_boutton").addEventListener("click", addition_f
 
 function addition_fonction() {
 
-    /*if (numero = ){
-        alert("ce n'est pas un chiffre");
+    
 
-    }*/
+    if (isNaN (numero)) {
+        return;
+    }
 
     numero = parseInt(document.getElementById("addition_texte").value)
 
-    SOMME=0
+    SOMME = 0
 
     for (i = 1; i < numero; i++) {
-        SOMME=SOMME+i 
+        SOMME = SOMME + i
 
         document.getElementById("addition_div").innerHTML += i + " + "
 
-        document.getElementById("addition_div").innerHTML += i + " = " + SOMME 
+        document.getElementById("addition_div").innerHTML += i + " = " + SOMME
     }
 
 }
+
+////////////////////////
+
+document.getElementById("multiple_boutton").addEventListener("clik", mafonction6)
+
+function mafonction6() {
+
+    numéro = parseInt(document.getElementById("multiple_texte").value)
+
+    SOMME = 1
+
+    for (i = 1; i < numero; i++) {
+        SOMME = SOMME * i
+
+        document.getElementById("multiple_div").innerHTML += i + " * "
+
+        document.getElementById("multiple_div").innerHTML += i + " = " + SOMME
+    }
+}
+
 
